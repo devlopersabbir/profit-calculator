@@ -1,9 +1,10 @@
 [package]
-name = "profit-calculator-app"
-version = "0.1.0"
+name = "profit-calculator"
+version = "0.1.2"
 authors = ["devlopersabbir <devlopersabbir@gmail.com>"]
 edition = "2021"
 build = "build.rs"
+description = "Simple Profit calculator"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,3 +13,11 @@ slint = "1.0"
 
 [build-dependencies]
 slint-build = "1.0"
+
+[package.metadata.bundle]
+name = "Profit Calculator"
+identifier = "com.devlopersabbir.profit-calculator"
+icon = ["./assets/icon.png", "./assets/icon@2x.png"]
+copyright = "Copyright (c) Sabbir Hossain Shuvo 2024. All rights reserved."
+category = "finance"
+short_description = "Simple Profit calculator"

@@ -1,20 +1,33 @@
 import { Button, VerticalBox, LineEdit} from "std-widgets.slint";
 
 export component AppWindow inherits Window {
+    title: "Profit Calculator";
+    in property <string> results : "";
+    callback calculateIncome(string);
     // background: #313e50;
     GridLayout {
         padding: 50px;
         spacing: 30px;
         Row {
-            Text {
-                text: "Enter your Income";
-                horizontal-alignment: center;
-                font-size: 25px;
-                font-weight: 900;
+            VerticalLayout {
+                Text {
+                    text: "Profite Calculator";
+                    horizontal-alignment: center;
+                    font-size: 30px;
+                    font-weight: 900;
+                }
+                Text {
+                    text: "Calculate your profit";
+                    horizontal-alignment: center;
+                    font-size: 15px;
+                    font-weight: 600;
+                    opacity: 50%;
+                    padding-top: 5px;
+                }
             }
-        }
+       }
         Row {
-            LineEdit {
+            income := LineEdit {
                 horizontal-alignment: center;
                 font-size: 15px;
                 padding: 5px;
@@ -27,6 +40,23 @@ export component AppWindow inherits Window {
                 text: "Calculate";
                 primary: true;
                 height: 35px;
+                clicked => {
+                    calculateIncome(income.text)
+                }
+            }
+        }
+        Row {
+            VerticalBox {
+                Rectangle {
+                    height: 100px;
+                    background: #f2f2f2;
+                    Text {
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text: root.results;
+                    }
+                }
             }
         }
     }

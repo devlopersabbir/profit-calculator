@@ -2813,8 +2813,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "profit-calculator-app"
-version = "0.1.0"
+name = "profit-calculator"
+version = "0.1.2"
 dependencies = [
  "slint",
  "slint-build",
