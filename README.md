@@ -2,8 +2,9 @@
 
 ### Preview of Calculator
 
-|Lanchpad|Spotlight|Output|
-|![Lanchpad](./screenshots/1.png)|![Spotlight](./screenshots/2.png)|![Output](./screenshots/3.png)|
+| Lanchpad                         | Spotlight                         | Output                         |
+| -------------------------------- | --------------------------------- | ------------------------------ |
+| ![Lanchpad](./screenshots/1.png) | ![Spotlight](./screenshots/2.png) | ![Output](./screenshots/3.png) |
 
 ## Usage
 
